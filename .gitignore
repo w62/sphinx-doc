@@ -1,0 +1,22 @@
+# .DS_Store
+# Sphinx build output
+_build/
+
+docs/build
+# Python virtual environment
+.venv/
+venv/
+
+# Editor/IDE specific files
+.vscode/
+.idea/
+
+# macOS specific files
+.DS_Store
+
+# Pyc files
+*.pyc
+__pycache__/
+
+# Other generated files or temporary files
+*.egg-info/
