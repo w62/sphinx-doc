@@ -51,8 +51,46 @@ will raise an exception.
    :returns: a result.
    :retval NULL: under some conditions.
    :retval NULL: under some other conditions as well.
+   
 >>> import lumache
 >>> lumache.get_random_ingredients()
 ['shells', 'gorgonzola', 'parsley']
 
 #
+
+
+::
+
+   +----+  +----+  +-----+  +----+  +----+  +----+  +-----+
+   |bgpd|  |ripd|  |ospfd|  |ldpd|  |pbrd|  |pimd|  |.....|
+   +----+  +----+  +-----+  +----+  +----+  +----+  +-----+
+        |       |        |       |       |       |        |
+   +----v-------v--------v-------v-------v-------v--------v
+   |                                                      |
+   |                         Zebra                        |
+   |                                                      |
+   +------------------------------------------------------+
+          |                    |                   |
+          |                    |                   |
+   +------v------+   +---------v--------+   +------v------+
+   |             |   |                  |   |             |
+   | *NIX Kernel |   | Remote dataplane |   | ........... |
+   |             |   |                  |   |             |
+   +-------------+   +------------------+   +-------------+
+
+
+.. mermaid::
+
+   sequenceDiagram
+      participant Alice
+      participant Bob
+      Alice->John: Hello John, how are you?
+      loop Healthcheck
+          John->John: Fight against hypochondria
+      end
+      Note right of John: Rational thoughts <br/>prevail...
+      John-->Alice: Great!
+      John->Bob: How about you?
+      Bob-->John: Jolly good!
+
+

@@ -13,6 +13,7 @@ build:
     build:
       html:
         - pip install furo
+        - pip install sphinxcontrib-mermaid
         - mkdir -p $READTHEDOCS_OUTPUT/html/
         - sphinx-build -M html docs/source/ $READTHEDOCS_OUTPUT
 
