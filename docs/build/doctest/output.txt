@@ -1,0 +1,26 @@
+Results of doctest builder run on 2025-08-09 22:12:42
+=====================================================
+
+Document: usage
+---------------
+**********************************************************************
+File "usage.rst", line 52, in default
+Failed example:
+    lumache.get_random_ingredients()
+Expected:
+    ['shells', 'gorgonzola', 'parsley']
+Got:
+    ['eggs', 'bacon', 'spam']
+**********************************************************************
+1 item had failures:
+   1 of   2 in default
+2 tests in 1 item.
+1 passed and 1 failed.
+***Test Failed*** 1 failure.
+
+Doctest summary
+===============
+    2 tests
+    1 failure in tests
+    0 failures in setup code
+    0 failures in cleanup code
