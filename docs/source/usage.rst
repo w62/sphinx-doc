@@ -2,6 +2,8 @@
 Usage
 =====
 
+.. _installation:
+
 Installation
 ------------
 
@@ -10,14 +12,6 @@ To use Lumache, first instalmakel it using pip:
 .. code-block:: console
       
    (.venv) $ pip install lumache
-
-Usage
-=====
-
-.. _installation:
-
-Installation
-------------
 
 ...
 
@@ -46,6 +40,17 @@ will raise an exception.
 
    A typedef-like declaration of a type.
 
+.. c:function:: void chello(void)
+
+   :returns: void
+
+.. c:function:: PyObject *PyType_GenericAlloc(PyTypeObject *type, Py_ssize_t nitems)
+
+   :param type: description of the first parameter.
+   :param nitems: description of the second parameter.
+   :returns: a result.
+   :retval NULL: under some conditions.
+   :retval NULL: under some other conditions as well.
 >>> import lumache
 >>> lumache.get_random_ingredients()
 ['shells', 'gorgonzola', 'parsley']

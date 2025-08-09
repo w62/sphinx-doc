@@ -26,3 +26,6 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: docs/build/html/
           force_orphan: true
+# based on this one
+# https://coderefinery.github.io/documentation/gh_workflow/ 
+# Full trust book worse than no book 
