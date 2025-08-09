@@ -2,7 +2,7 @@
 # Sphinx build output
 _build/
 
-docs/build
+docs/build/
 # Python virtual environment
 .venv/
 venv/

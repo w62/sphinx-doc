@@ -22,3 +22,5 @@ Installation
 ------------
 
 ...
+
+Please share other installing methods, if available. 
