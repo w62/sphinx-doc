@@ -1,6 +1,6 @@
 
-Usage
-=====
+Usage page header
+=================
 
 .. _installation:
 
@@ -140,7 +140,7 @@ Admonitions
    You can make up your own admonition too.
 
 Math
-====
+----
 
 This is a test. Here is an equation:
 :math:`X_{0:5} = (X_0, X_1, X_2, X_3, X_4)`.
